@@ -5,7 +5,7 @@ allows for an interactive overlay on each page
 
 ## install :
 ```
-git clone https://github.com/rbenzazon/piechart.git
+git clone https://github.com/rbenzazon/image_slider.git
 npm install
 ```
 
