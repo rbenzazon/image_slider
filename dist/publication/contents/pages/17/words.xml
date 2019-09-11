@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page num="17" method="xml-words">
+  <block id="1">
+    <word soundex="V000"><![CDATA[vue]]></word>
+    <word soundex="E236"><![CDATA[extérieure]]></word>
+    <word soundex="N300"><![CDATA[nuit]]></word>
+  </block>
+  <block id="2">
+    <word soundex="R423"><![CDATA[réalisation]]></word>
+    <word soundex="C615"><![CDATA[charpente]]></word>
+    <word soundex="B600"><![CDATA[bureau]]></word>
+    <word soundex="T300"><![CDATA[étude]]></word>
+    <word soundex="A536"><![CDATA[andré]]></word>
+    <word soundex="R150"><![CDATA[robin]]></word>
+    <word soundex="F600"><![CDATA[faure]]></word>
+    <word soundex="V525"><![CDATA[vincent]]></word>
+  </block>
+  <block id="3">
+    <word soundex="M560"><![CDATA[maçonnerie]]></word>
+    <word soundex="P600"><![CDATA[pierre]]></word>
+    <word soundex="T600"><![CDATA[thierry]]></word>
+    <word soundex="F660"><![CDATA[ferrero]]></word>
+  </block>
+</page>

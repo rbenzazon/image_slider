@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Part 2</title>
+    
+</head>
+
+<body id="wpanim" >
+	<style>
+        @-webkit-keyframes slide {
+            0% {
+                -webkit-transform: translate(100px, 0px);
+                -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+                opacity: 0;
+            }
+            100% {
+                -webkit-transform: translate(0px, 0px);
+                -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slide {
+            0% {
+                transform: translate(100px, 0px);
+                transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+                opacity: 0;
+            }
+            100% {
+                transform: translate(0px, 0px);
+                transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+                opacity: 1;
+            }
+        }
+        
+        .slide {
+            -webkit-animation-name: slide;
+            -webkit-animation-duration: .9s;
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-fill-mode: forwards;
+            animation-name: slide;
+            animation-duration: .9s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            position: absolute;
+			webkit-user-select: none;
+			pointer-events: none;
+			moz-pointer-events: none;
+			ms-pointer-events: none;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        
+        .global {
+            height: 100%;
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+    <div style="left:155px;top:66px;position:absolute"><img src="assets/text1.png" />
+    </div>
+    <div style="left:155px;top:121.15px;position:absolute"><img src="assets/text2.png" />
+    </div>
+    <div style="left:155px;top:176.30px;position:absolute"><img src="assets/text3.png" />
+    </div>
+
+    <script type="text/javascript" src="assets/wpanim.js" >        
+    </script>
+</body>
+
+</html>

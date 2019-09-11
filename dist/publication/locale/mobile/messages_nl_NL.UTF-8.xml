@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<message id="action_send"><![CDATA[Versturen]]></message>
+	<message id="details"><![CDATA[Gegevens]]></message>
+	<message id="details_information"><![CDATA[Informatie]]></message>
+	<message id="incorrect_email"><![CDATA[Onjuist e-mailadres]]></message>
+	<message id="label_message"><![CDATA[Bericht]]></message>
+	<message id="label_page"><![CDATA[Pagina]]></message>
+	<message id="label_receiveremail"><![CDATA[E-mailadres van ontvanger]]></message>
+	<message id="label_youremail"><![CDATA[Uw e-mail]]></message>
+	<message id="label_yourname"><![CDATA[Uw naam]]></message>
+	<message id="mail_attachment"><![CDATA[Bijlage:]]></message>
+	<message id="mail_send_error"><![CDATA[Er deed zich een fout voor... Probeer het later nog eens]]></message>
+	<message id="mail_send_success"><![CDATA[Uw e-mail is verstuurd]]></message>
+	<message id="media_drive"><![CDATA[Map]]></message>
+	<message id="media_image"><![CDATA[Foto]]></message>
+	<message id="media_video"><![CDATA[Video]]></message>
+	<message id="menu_documentback"><![CDATA[Terug naar het document]]></message>
+	<message id="menu_facebook_share"><![CDATA[Delen op Facebook]]></message>
+	<message id="menu_fullscreen"><![CDATA[Volledig scherm]]></message>
+	<message id="menu_gallery"><![CDATA[Galerij]]></message>
+	<message id="menu_googleplus_share"><![CDATA[Delen op Google+]]></message>
+	<message id="menu_linkedin_share"><![CDATA[Delen op LinkedIn]]></message>
+	<message id="menu_mail"><![CDATA[Versturen per e-mail]]></message>
+	<message id="menu_pinterest_share"><![CDATA[Delen op Pinterest]]></message>
+	<message id="menu_search"><![CDATA[Zoeken]]></message>
+	<message id="menu_sharethis"><![CDATA[Delen]]></message>
+	<message id="menu_summary"><![CDATA[Inhoudsopgave]]></message>
+	<message id="menu_thumbnail"><![CDATA[Alle pagina's]]></message>
+	<message id="menu_tumblr_share"><![CDATA[Delen op Tumblr]]></message>
+	<message id="menu_twitter_share"><![CDATA[Delen op Twitter]]></message>
+	<message id="multilinks_title"><![CDATA[Kies een handeling]]></message>
+	<message id="pagination_error"><![CDATA[Het door u gekozen paginanummer bestaat niet. Voer een nummer in]]></message>
+	<message id="pagination_legend"><![CDATA[Voer het gewenste paginanummer in]]></message>
+	<message id="pagination_separator"><![CDATA[van]]></message>
+	<message id="search_ended"><![CDATA[Zoekopdracht beëindigd]]></message>
+	<message id="search_no_result"><![CDATA[Geen resultaat]]></message>
+	<message id="search_result"><![CDATA[resultaten]]></message>
+	<message id="searchPlaceholder"><![CDATA[Zoeken]]></message>
+</messages>

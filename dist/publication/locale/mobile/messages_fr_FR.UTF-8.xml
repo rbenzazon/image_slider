@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<message id="action_send"><![CDATA[Envoyer]]></message>
+	<message id="details"><![CDATA[Détails]]></message>
+	<message id="details_information"><![CDATA[Informations]]></message>
+	<message id="incorrect_email"><![CDATA[Email incorrect]]></message>
+	<message id="label_message"><![CDATA[Message]]></message>
+	<message id="label_page"><![CDATA[Page]]></message>
+	<message id="label_receiveremail"><![CDATA[Email du destinataire]]></message>
+	<message id="label_youremail"><![CDATA[Votre email]]></message>
+	<message id="label_yourname"><![CDATA[Votre nom]]></message>
+	<message id="mail_attachment"><![CDATA[Pièce jointe :]]></message>
+	<message id="mail_send_error"><![CDATA[Une erreur est survenue... Merci de rééssayer ultrieurement]]></message>
+	<message id="mail_send_success"><![CDATA[Votre message a bien été envoyé]]></message>
+	<message id="media_drive"><![CDATA[Dossier]]></message>
+	<message id="media_image"><![CDATA[Photo]]></message>
+	<message id="media_video"><![CDATA[Vidéo]]></message>
+	<message id="menu_documentback"><![CDATA[Retour au document]]></message>
+	<message id="menu_facebook_share"><![CDATA[Partager sur Facebook]]></message>
+	<message id="menu_fullscreen"><![CDATA[Plein écran]]></message>
+	<message id="menu_gallery"><![CDATA[Galerie]]></message>
+	<message id="menu_googleplus_share"><![CDATA[Partager sur Google+]]></message>
+	<message id="menu_linkedin_share"><![CDATA[Partager sur LinkedIn]]></message>
+	<message id="menu_mail"><![CDATA[Envoyer par email]]></message>
+	<message id="menu_pinterest_share"><![CDATA[Partager sur Pinterest]]></message>
+	<message id="menu_search"><![CDATA[Rechercher]]></message>
+	<message id="menu_sharethis"><![CDATA[Partager]]></message>
+	<message id="menu_summary"><![CDATA[Sommaire]]></message>
+	<message id="menu_thumbnail"><![CDATA[Toutes les pages]]></message>
+	<message id="menu_tumblr_share"><![CDATA[Partager sur Tumblr]]></message>
+	<message id="menu_twitter_share"><![CDATA[Partager sur Twitter]]></message>
+	<message id="multilinks_title"><![CDATA[Choisissez une action]]></message>
+	<message id="pagination_error"><![CDATA[Le numéro de la page désirée n'existe pas. Entrez un nouveau numéro]]></message>
+	<message id="pagination_legend"><![CDATA[Entrez le numéro de la page désirée]]></message>
+	<message id="pagination_separator"><![CDATA[sur]]></message>
+	<message id="search_ended"><![CDATA[Recherche terminée]]></message>
+	<message id="search_no_result"><![CDATA[Aucun résultat]]></message>
+	<message id="search_result"><![CDATA[résultats]]></message>
+	<message id="searchPlaceholder"><![CDATA[Rechercher]]></message>
+</messages>

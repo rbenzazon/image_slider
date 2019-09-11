@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<message id="action_send"><![CDATA[Отправить]]></message>
+	<message id="details"><![CDATA[Подробнее]]></message>
+	<message id="details_information"><![CDATA[Информация]]></message>
+	<message id="incorrect_email"><![CDATA[Неверный адрес электронной почты]]></message>
+	<message id="label_message"><![CDATA[Сообщение]]></message>
+	<message id="label_page"><![CDATA[Страница]]></message>
+	<message id="label_receiveremail"><![CDATA[Адрес получателя]]></message>
+	<message id="label_youremail"><![CDATA[Ваш адрес]]></message>
+	<message id="label_yourname"><![CDATA[Ваше имя]]></message>
+	<message id="mail_attachment"><![CDATA[Вложение:]]></message>
+	<message id="mail_send_error"><![CDATA[Произошла ошибка... Пожалуйста, попробуйте позже]]></message>
+	<message id="mail_send_success"><![CDATA[Ваше письмо отправлено]]></message>
+	<message id="media_drive"><![CDATA[Папка]]></message>
+	<message id="media_image"><![CDATA[Фото]]></message>
+	<message id="media_video"><![CDATA[Видео]]></message>
+	<message id="menu_documentback"><![CDATA[Вернуться к документу]]></message>
+	<message id="menu_facebook_share"><![CDATA[Поделиться на Facebook]]></message>
+	<message id="menu_fullscreen"><![CDATA[Полноэкранный режим]]></message>
+	<message id="menu_gallery"><![CDATA[Галерея]]></message>
+	<message id="menu_googleplus_share"><![CDATA[Поделиться на Google+]]></message>
+	<message id="menu_linkedin_share"><![CDATA[Поделиться на LinkedIn]]></message>
+	<message id="menu_mail"><![CDATA[Отправить по электронной почте]]></message>
+	<message id="menu_pinterest_share"><![CDATA[Поделиться на Pinterest]]></message>
+	<message id="menu_search"><![CDATA[Поиск]]></message>
+	<message id="menu_sharethis"><![CDATA[Поделиться]]></message>
+	<message id="menu_summary"><![CDATA[Содержание]]></message>
+	<message id="menu_thumbnail"><![CDATA[Все страницы]]></message>
+	<message id="menu_tumblr_share"><![CDATA[Поделиться на Tumblr]]></message>
+	<message id="menu_twitter_share"><![CDATA[Поделиться в Twitter]]></message>
+	<message id="pagination_error"><![CDATA[Страницы под таким номером не существует. Введите другой номер]]></message>
+	<message id="pagination_legend"><![CDATA[Введите номер страницы]]></message>
+	<message id="pagination_separator"><![CDATA[на]]></message>
+	<message id="search_ended"><![CDATA[Поиск завершен]]></message>
+	<message id="search_no_result"><![CDATA[Нет результатов]]></message>
+	<message id="search_result"><![CDATA[Результаты]]></message>
+	<message id="searchPlaceholder"><![CDATA[Поиск]]></message>
+</messages>

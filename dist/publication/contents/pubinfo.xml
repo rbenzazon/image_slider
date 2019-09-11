@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0.0">
+  <template url="$template$template.xml"/>
+  <contents url="$contents$contents.xml"/>
+  <statistics url="$contents$statistics.xml"/>
+  <variables>
+    <contents value="~/contents/"/>
+    <root value=".."/>
+    <system value="$contents$lib/"/>
+    <templates value="$contents$templates/"/>
+    <template value="$contents$templates/"/>
+    <aspgenerationId value="153640"/>
+    <managerHost value="http://fr.adminzone-secure.net:80"/>
+    <clientId value="797"/>
+  </variables>
+</root>

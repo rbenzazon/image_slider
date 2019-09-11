@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page num="19" method="xml-words">
+  <block id="1">
+    <word soundex="F526"><![CDATA[foncier]]></word>
+    <word soundex="T650"><![CDATA[terrain]]></word>
+  </block>
+  <block id="2">
+    <word soundex="A252"><![CDATA[agence]]></word>
+    <word soundex="T650"><![CDATA[turin]]></word>
+    <word soundex="I514"><![CDATA[immobilier]]></word>
+  </block>
+  <block id="3">
+    <word soundex="T650"><![CDATA[turin]]></word>
+    <word soundex="V525"><![CDATA[vincent]]></word>
+    <word soundex="T655"><![CDATA[turin-immobilier]]></word>
+  </block>
+  <block id="4">
+    <word soundex="R562"><![CDATA[remerciements]]></word>
+  </block>
+  <block id="5">
+    <word soundex="M560"><![CDATA[maçonnerie]]></word>
+    <word soundex="P422"><![CDATA[plaquage]]></word>
+    <word soundex="C642"><![CDATA[carrelage]]></word>
+    <word soundex="C550"><![CDATA[cheminée]]></word>
+  </block>
+  <block id="6">
+    <word soundex="P500"><![CDATA[payan]]></word>
+    <word soundex="F660"><![CDATA[ferrero]]></word>
+    <word soundex="P600"><![CDATA[pierre]]></word>
+    <word soundex="T600"><![CDATA[thierry]]></word>
+    <word soundex="A223"><![CDATA[assistés]]></word>
+    <word soundex="M240"><![CDATA[michael]]></word>
+  </block>
+  <block id="7">
+    <word soundex="P500"><![CDATA[payan]]></word>
+    <word soundex="F660"><![CDATA[ferrero]]></word>
+    <word soundex="W530"><![CDATA[wanadoo]]></word>
+  </block>
+  <block id="8">
+    <word soundex="E423"><![CDATA[electricité]]></word>
+    <word soundex="D532"><![CDATA[domotique]]></word>
+  </block>
+  <block id="9">
+    <word soundex="D532"><![CDATA[domotique]]></word>
+    <word soundex="J300"><![CDATA[jde]]></word>
+    <word soundex="J600"><![CDATA[jarry]]></word>
+    <word soundex="J450"><![CDATA[julien]]></word>
+  </block>
+  <block id="10">
+    <word soundex="C532"><![CDATA[contact-jde]]></word>
+    <word soundex="O652"><![CDATA[orange]]></word>
+  </block>
+  <block id="11">
+    <word soundex="P451"><![CDATA[plomberie]]></word>
+    <word soundex="C120"><![CDATA[chauffage]]></word>
+  </block>
+  <block id="12">
+    <word soundex="A412"><![CDATA[alpes]]></word>
+    <word soundex="F432"><![CDATA[fluides]]></word>
+    <word soundex="V600"><![CDATA[varry]]></word>
+    <word soundex="A535"><![CDATA[antoine]]></word>
+    <word soundex="G164"><![CDATA[gabrielli]]></word>
+    <word soundex="M250"><![CDATA[maxime]]></word>
+  </block>
+  <block id="13">
+    <word soundex="A412"><![CDATA[alpes]]></word>
+    <word soundex="U320"><![CDATA[uides]]></word>
+    <word soundex="O652"><![CDATA[orange]]></word>
+  </block>
+  <block id="14">
+    <word soundex="C615"><![CDATA[charpente]]></word>
+    <word soundex="M526"><![CDATA[menuiserie]]></word>
+    <word soundex="E236"><![CDATA[extérieur]]></word>
+  </block>
+  <block id="15">
+    <word soundex="A536"><![CDATA[andré]]></word>
+    <word soundex="R150"><![CDATA[robin]]></word>
+    <word soundex="F615"><![CDATA[faure-vincent]]></word>
+    <word soundex="A223"><![CDATA[assistés]]></word>
+    <word soundex="R341"><![CDATA[rodolphe]]></word>
+    <word soundex="O416"><![CDATA[olivier]]></word>
+  </block>
+  <block id="16">
+    <word soundex="C523"><![CDATA[construction-chalet-bois]]></word>
+  </block>
+  <block id="17">
+    <word soundex="M362"><![CDATA[matériaux]]></word>
+  </block>
+  <block id="18">
+    <word soundex="B452"><![CDATA[blanchet]]></word>
+    <word soundex="R363"><![CDATA[ritarita]]></word>
+    <word soundex="B452"><![CDATA[blanchet]]></word>
+    <word soundex="M600"><![CDATA[mur]]></word>
+    <word soundex="V234"><![CDATA[végétal]]></word>
+    <word soundex="V630"><![CDATA[verde]]></word>
+    <word soundex="P600"><![CDATA[pro]]></word>
+    <word soundex="R250"><![CDATA[rusconi]]></word>
+    <word soundex="L600"><![CDATA[laura]]></word>
+    <word soundex="V631"><![CDATA[verdepro]]></word>
+  </block>
+  <block id="19">
+    <word soundex="A252"><![CDATA[agencement]]></word>
+    <word soundex="E152"><![CDATA[ebeniste]]></word>
+  </block>
+  <block id="20">
+    <word soundex="A346"><![CDATA[atelier]]></word>
+    <word soundex="M532"><![CDATA[monts]]></word>
+    <word soundex="M614"><![CDATA[merveilles]]></word>
+    <word soundex="G330"><![CDATA[goudet]]></word>
+    <word soundex="C455"><![CDATA[clément]]></word>
+    <word soundex="C455"><![CDATA[clement]]></word>
+    <word soundex="G330"><![CDATA[goudet]]></word>
+    <word soundex="H354"><![CDATA[hotmail]]></word>
+    <word soundex="M526"><![CDATA[menuiserie]]></word>
+    <word soundex="A412"><![CDATA[alpes]]></word>
+    <word soundex="B200"><![CDATA[bois]]></word>
+    <word soundex="F600"><![CDATA[faure]]></word>
+    <word soundex="P362"><![CDATA[patrice]]></word>
+    <word soundex="M526"><![CDATA[menuiserie-alpes-bois]]></word>
+  </block>
+  <block id="21">
+    <word soundex="E533"><![CDATA[enduits]]></word>
+    <word soundex="P620"><![CDATA[pierres]]></word>
+  </block>
+  <block id="22">
+    <word soundex="E536"><![CDATA[entreprise]]></word>
+    <word soundex="P620"><![CDATA[pierrick]]></word>
+    <word soundex="C634"><![CDATA[courtial]]></word>
+    <word soundex="C634"><![CDATA[courtial]]></word>
+    <word soundex="L123"><![CDATA[laposte]]></word>
+  </block>
+  <block id="23">
+    <word soundex="M146"><![CDATA[mobilier]]></word>
+  </block>
+  <block id="24">
+    <word soundex="A524"><![CDATA[angle]]></word>
+    <word soundex="D630"><![CDATA[droit]]></word>
+    <word soundex="M146"><![CDATA[mobilier]]></word>
+    <word soundex="C535"><![CDATA[contemporain]]></word>
+    <word soundex="R200"><![CDATA[roche]]></word>
+    <word soundex="B120"><![CDATA[bobois]]></word>
+    <word soundex="A613"><![CDATA[arrivetz]]></word>
+  </block>
+  <block id="25">
+    <word soundex="C250"><![CDATA[cuisine]]></word>
+  </block>
+  <block id="26">
+    <word soundex="M145"><![CDATA[mobilinino]]></word>
+    <word soundex="G000"><![CDATA[gia]]></word>
+    <word soundex="B230"><![CDATA[baste]]></word>
+    <word soundex="D130"><![CDATA[david]]></word>
+    <word soundex="A223"><![CDATA[assisté]]></word>
+    <word soundex="L200"><![CDATA[luca]]></word>
+    <word soundex="M145"><![CDATA[mobilinino]]></word>
+  </block>
+  <block id="27">
+    <word soundex="P326"><![CDATA[photographie]]></word>
+  </block>
+  <block id="28">
+    <word soundex="B350"><![CDATA[bodin]]></word>
+    <word soundex="B636"><![CDATA[bertrand]]></word>
+    <word soundex="B351"><![CDATA[bodinphoto]]></word>
+  </block>
+  <block id="29">
+    <word soundex="T126"><![CDATA[tapissier]]></word>
+    <word soundex="D263"><![CDATA[decorateur]]></word>
+  </block>
+  <block id="30">
+    <word soundex="S642"><![CDATA[serrullaz]]></word>
+    <word soundex="B362"><![CDATA[beatrice]]></word>
+    <word soundex="A223"><![CDATA[assistée]]></word>
+    <word soundex="C650"><![CDATA[corinne]]></word>
+  </block>
+</page>

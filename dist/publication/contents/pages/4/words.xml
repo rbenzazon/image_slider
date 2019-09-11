@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page num="4" method="xml-words">
+  <block id="1">
+    <word soundex="R516"><![CDATA[rambarde]]></word>
+    <word soundex="O243"><![CDATA[occultante]]></word>
+    <word soundex="H625"><![CDATA[horizontale]]></word>
+    <word soundex="P653"><![CDATA[permettant]]></word>
+    <word soundex="P220"><![CDATA[passage]]></word>
+    <word soundex="S440"><![CDATA[soleil]]></word>
+  </block>
+  <block id="2">
+    <word soundex="C120"><![CDATA[coupes]]></word>
+    <word soundex="O524"><![CDATA[onglées]]></word>
+    <word soundex="D520"><![CDATA[dans]]></word>
+    <word soundex="A524"><![CDATA[angles]]></word>
+  </block>
+  <block id="3">
+    <word soundex="R420"><![CDATA[réalisée]]></word>
+    <word soundex="M420"><![CDATA[mélèze]]></word>
+    <word soundex="P200"><![CDATA[pays]]></word>
+  </block>
+</page>

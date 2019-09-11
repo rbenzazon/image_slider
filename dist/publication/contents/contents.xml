@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="1.0.0">
+  <contents shift="0" prefix="page" pages_nr="19" padding="0">
+    <content height="419" path="$contents$$pages$%num%/" width="595" ext="swf" id="swf" type="swf"/>
+    <content path="$contents$" prefix="text" asset="true" ext="xml" id="text" type="xml"><![CDATA[text]]></content>
+    <content path="$contents$" prefix="index" asset="true" ext="xml" id="summary" type="xml"><![CDATA[index]]></content>
+    <content type="jpg" path="$contents$$pages$%num%/" width="489" ext="jpg" height="344" prefix="489x582" id="Low"/>
+    <content type="xml" path="$contents$$pages$%num%/" ext="xml" prefix="links" id="links"/>
+    <content type="jpg" path="$contents$$pages$%num%/" width="130" ext="jpg" height="91" prefix="diapo" id="thumbnails"/>
+    <content type="jpg" path="$contents$$pages$%num%/" width="1024" ext="jpg" height="721" prefix="1024x0" id="Zoom"/>
+    <content id="fullPdf" ext="pdf" path="$contents$" type="pdf"><![CDATA[pdfweb]]></content>
+    <content id="pdf" ext="pdf" path="$contents$$pages$%num%/" type="pdf"/>
+    <content type="jpg" path="$contents$$pages$%num%/" width="489" ext="jpg" height="344" prefix="NT489x582" id="LowNoTxt"/>
+    <content type="jpg" path="$contents$$pages$%num%/" width="1024" ext="jpg" height="721" prefix="NT1024x0" id="ZoomNoTxt"/>
+    <content type="svg" path="$contents$$pages$%num%/" width="1024" ext="svg" height="721" prefix="NI1024x0" id="svgNoImg"/>
+    <content id="gallery" ext="" path="$media$151037/" type="gallery"/>
+  </contents>
+  <variables>
+    <id value="153640"/>
+    <locale value="en_US.UTF-8"/>
+    <content_lib value="$contents$lib/"/>
+    <media value="$contents$media/"/>
+    <gallery_xml value="gallery.xml"/>
+    <gallery value="$contents$gallery/"/>
+    <pages value="pages/"/>
+    <thumbnails value="thumbs/"/>
+    <pdf value="pdfs/"/>
+    <links value="links/"/>
+    <version value="V3.16"/>
+    <drive value="$contents$gallery/"/>
+  </variables>
+</root>

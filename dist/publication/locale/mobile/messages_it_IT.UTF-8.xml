@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<message id="action_send"><![CDATA[Invia]]></message>
+	<message id="details"><![CDATA[Dettagli]]></message>
+	<message id="details_information"><![CDATA[Informazioni]]></message>
+	<message id="incorrect_email"><![CDATA[Email non corretta]]></message>
+	<message id="label_message"><![CDATA[Messaggio]]></message>
+	<message id="label_page"><![CDATA[Pagina]]></message>
+	<message id="label_receiveremail"><![CDATA[Email destinatario]]></message>
+	<message id="label_youremail"><![CDATA[La tua email]]></message>
+	<message id="label_yourname"><![CDATA[Il tuo nome]]></message>
+	<message id="mail_attachment"><![CDATA[Allegato:]]></message>
+	<message id="mail_send_error"><![CDATA[Si è verificato un errore... Riprova più tardi]]></message>
+	<message id="mail_send_success"><![CDATA[La tua email è stata inviata]]></message>
+	<message id="media_drive"><![CDATA[Cartella]]></message>
+	<message id="media_image"><![CDATA[Foto]]></message>
+	<message id="media_video"><![CDATA[Video]]></message>
+	<message id="menu_documentback"><![CDATA[Torna al documento]]></message>
+	<message id="menu_facebook_share"><![CDATA[Condividi su Facebook]]></message>
+	<message id="menu_fullscreen"><![CDATA[Schermo intero]]></message>
+	<message id="menu_gallery"><![CDATA[Galleria]]></message>
+	<message id="menu_googleplus_share"><![CDATA[Condividi su Google+]]></message>
+	<message id="menu_linkedin_share"><![CDATA[Condividi su LinkedIn]]></message>
+	<message id="menu_mail"><![CDATA[Invia per email]]></message>
+	<message id="menu_pinterest_share"><![CDATA[Condividi su Pinterest]]></message>
+	<message id="menu_search"><![CDATA[Ricerca]]></message>
+	<message id="menu_sharethis"><![CDATA[Condividi]]></message>
+	<message id="menu_summary"><![CDATA[Contenuti]]></message>
+	<message id="menu_thumbnail"><![CDATA[Tutte le pagine]]></message>
+	<message id="menu_tumblr_share"><![CDATA[Condividi su Tumblr]]></message>
+	<message id="menu_twitter_share"><![CDATA[Condividi su Twitter]]></message>
+	<message id="multilinks_title"><![CDATA[Scegli un'azione]]></message>
+	<message id="pagination_error"><![CDATA[Il numero di pagina che hai scelto non esiste. Inserisci un nuovo numero]]></message>
+	<message id="pagination_legend"><![CDATA[Inserisci il numero di pagina richiesto]]></message>
+	<message id="pagination_separator"><![CDATA[su]]></message>
+	<message id="search_ended"><![CDATA[Ricerca finita]]></message>
+	<message id="search_no_result"><![CDATA[Nessun risultato]]></message>
+	<message id="search_result"><![CDATA[risultati]]></message>
+	<message id="searchPlaceholder"><![CDATA[Ricerca]]></message>
+</messages>

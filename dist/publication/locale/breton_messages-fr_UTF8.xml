@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<messages>
+	<message id="jobSearch" ><![CDATA[Rubriques...]]></message>
+	<message id="placeSearch" ><![CDATA[Localités...]]></message>
+	<message id="nameSearch" ><![CDATA[Nom...]]></message>
+	
+	<message id="panel_summary_title" ><![CDATA[Infos Practiques]]></message>
+	<message id="panel_summary_2_title" ><![CDATA[Plans de localités]]></message>
+</messages>

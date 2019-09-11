@@ -1,0 +1,19 @@
+{
+	"primary": {
+		"backgroundColor": {"type": "rgbColor"},
+		"actionColor": {"type": "rgbColor"},
+		"topnavColor": {"type": "rgbColor"},
+		"topnavAlpha": {"type": "float", "min": 0, "max": 1},
+		"topnavFilters": {"type": "enum", "values":["menudropshadow", ""]},
+		"spacerColor": {"type": "rgbColor"},		
+		"contentColor": {"type": "rgbColor"},
+		"strongColor": {"type": "rgbColor"},		
+		"altPopupBackgroundColor": {"type": "rgbColor"}
+	},
+	"secondary": {
+		"altContentColor": {"type": "rgbColor"},
+		"linkColor": {"type": "rgbColor"},
+		"linkBackgroundColor": {"type": "rgbColor"},
+		"linkAlpha": {"type": "float", "min": 0, "max": 1}
+	}
+}
