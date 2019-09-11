@@ -2,7 +2,7 @@
   "name": "image_viewer",
   "version": "1.0.0",
   "description": "displays a bunch of images, let the user slide them with touch interaction\r preloads images\r allows for an interactive overlay on each page",
-  "main": "image_viewer.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode development",
