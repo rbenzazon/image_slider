@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page num="15" method="xml-words">
+  <block id="1">
+    <word soundex="Z500"><![CDATA[zoom]]></word>
+    <word soundex="L250"><![CDATA[lychen]]></word>
+    <word soundex="V234"><![CDATA[végétal]]></word>
+  </block>
+  <block id="2">
+    <word soundex="P415"><![CDATA[plafond]]></word>
+    <word soundex="P264"><![CDATA[passerelles]]></word>
+    <word soundex="A262"><![CDATA[ajourées]]></word>
+    <word soundex="P600"><![CDATA[pour]]></word>
+    <word soundex="A200"><![CDATA[accès]]></word>
+    <word soundex="C516"><![CDATA[chambres]]></word>
+    <word soundex="J635"><![CDATA[jardin]]></word>
+  </block>
+</page>

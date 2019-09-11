@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page num="6" method="xml-words">
+  <block id="1">
+    <word soundex="D400"><![CDATA[détail]]></word>
+    <word soundex="R300"><![CDATA[rideau]]></word>
+    <word soundex="D236"><![CDATA[distribuant]]></word>
+    <word soundex="N120"><![CDATA[niveaux]]></word>
+  </block>
+  <block id="2">
+    <word soundex="E514"><![CDATA[empilement]]></word>
+    <word soundex="P452"><![CDATA[planches]]></word>
+    <word soundex="M422"><![CDATA[mélèzes]]></word>
+    <word soundex="S612"><![CDATA[surface]]></word>
+    <word soundex="F500"><![CDATA[façon]]></word>
+    <word soundex="D220"><![CDATA[dosses]]></word>
+    <word soundex="B200"><![CDATA[bois]]></word>
+    <word soundex="P420"><![CDATA[polis]]></word>
+    <word soundex="R362"><![CDATA[rétro-éclairé]]></word>
+  </block>
+  <block id="3">
+	  </block>
+  <block id="4">
+    <word soundex="E123"><![CDATA[evocation]]></word>
+    <word soundex="M652"><![CDATA[morènes]]></word>
+    <word soundex="G426"><![CDATA[glacières]]></word>
+    <word soundex="R165"><![CDATA[référence]]></word>
+    <word soundex="F652"><![CDATA[formes]]></word>
+    <word soundex="S620"><![CDATA[séracs]]></word>
+    <word soundex="G426"><![CDATA[glacier]]></word>
+  </block>
+</page>

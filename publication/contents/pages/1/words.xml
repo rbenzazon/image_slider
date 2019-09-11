@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page num="1" method="xml-words">
+  <block id="1">
+    <word soundex="C430"><![CDATA[chalet]]></word>
+    <word soundex="L000"><![CDATA[le]]></word>
+    <word soundex="B413"><![CDATA[belvédère]]></word>
+    <word soundex="D200"><![CDATA[des]]></word>
+    <word soundex="C652"><![CDATA[écrins]]></word>
+  </block>
+  <block id="2">
+    <word soundex="P615"><![CDATA[provence]]></word>
+    <word soundex="A412"><![CDATA[alpes]]></word>
+    <word soundex="C300"><![CDATA[côte]]></word>
+    <word soundex="A260"><![CDATA[azur]]></word>
+    <word soundex="A433"><![CDATA[altitude]]></word>
+    <word soundex="M000"><![CDATA[1557m]]></word>
+  </block>
+</page>

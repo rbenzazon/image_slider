@@ -1,0 +1,23 @@
+{
+  "id" : 151037,
+  "type" : 11,
+  "src" : "$drive$151037_meta.json",
+  "label" : "test",
+  "descriptions" : { },
+  "titles" : { },
+  "creationDate" : "2015-11-27 07:37:24",
+  "lastUpdateDate" : "2015-11-27 07:37:43",
+  "beginDate" : "2015-11-27 07:37:24",
+  "endDate" : "2016-11-27 22:59:59",
+  "version" : 1,
+  "name" : "test",
+  "parent" : 1510,
+  "countryFlags" : [ ],
+  "blocksNumber" : 1,
+  "resolutionsBlock" : 1,
+  "resources" : [ {
+    "id" : 151038,
+    "type" : 4,
+    "block" : 1
+  } ]
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page num="8" method="xml-words">
+  <block id="1">
+    <word soundex="E514"><![CDATA[enflade]]></word>
+    <word soundex="J200"><![CDATA[jusqu]]></word>
+    <word soundex="T620"><![CDATA[terrasse]]></word>
+    <word soundex="D120"><![CDATA[depuis]]></word>
+    <word soundex="E536"><![CDATA[entrée]]></word>
+  </block>
+  <block id="2">
+    <word soundex="P652"><![CDATA[principale]]></word>
+    <word soundex="C430"><![CDATA[châlet]]></word>
+  </block>
+  <block id="3">
+    <word soundex="A000"><![CDATA[au]]></word>
+    <word soundex="P656"><![CDATA[premier]]></word>
+    <word soundex="P450"><![CDATA[plan]]></word>
+    <word soundex="E246"><![CDATA[escalier]]></word>
+    <word soundex="S200"><![CDATA[sous]]></word>
+    <word soundex="B200"><![CDATA[bois]]></word>
+    <word soundex="C512"><![CDATA[composé]]></word>
+    <word soundex="V523"><![CDATA[vingtaine]]></word>
+    <word soundex="T652"><![CDATA[troncs]]></word>
+    <word soundex="C516"><![CDATA[compris]]></word>
+    <word soundex="E536"><![CDATA[entre]]></word>
+    <word soundex="M362"><![CDATA[mètres]]></word>
+  </block>
+  <block id="4">
+    <word soundex="E125"><![CDATA[epicentre]]></word>
+    <word soundex="P220"><![CDATA[passage]]></word>
+    <word soundex="O142"><![CDATA[obligé]]></word>
+    <word soundex="P600"><![CDATA[pour]]></word>
+    <word soundex="A236"><![CDATA[accéder]]></word>
+    <word soundex="N120"><![CDATA[niveaux]]></word>
+  </block>
+  <block id="5">
+    <word soundex="S360"><![CDATA[stère]]></word>
+    <word soundex="B200"><![CDATA[bois]]></word>
+    <word soundex="S215"><![CDATA[suspendu]]></word>
+    <word soundex="G200"><![CDATA[guise]]></word>
+    <word soundex="H300"><![CDATA[hotte]]></word>
+    <word soundex="C550"><![CDATA[cheminée]]></word>
+  </block>
+</page>

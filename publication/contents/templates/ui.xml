@@ -1,0 +1,1491 @@
+<root>
+  <uielements>
+    <element id="background" priority="1" style="background" gpu="true">
+      <position>
+        <scale fit="exact" ref="stage"/>
+        <relative rely_on="stage">
+          <rely_anchor x="left" y="top"/>
+          <base_anchor x="left" y="top"/>
+        </relative>
+      </position>
+      <content>
+        <rect/>
+      </content>
+    </element>
+    <SimpleFlipBook id="flipBook" priority="10">
+      <position>
+        <scale fit="inside" ref="stage">
+          <margins left="35" top="60" right="35" bottom="25"/>
+        </scale>
+      </position>
+    </SimpleFlipBook>
+    <Slider id="slider" priority="10">
+      <position>
+        <scale fit="inside" ref="stage">
+          <margins left="35" top="60" right="35" bottom="25"/>
+        </scale>
+      </position>
+    </Slider>
+    <ShadowElement id="shadow" priority="9">
+      <position>
+        <scale fit="exact" ref="flipBook"/>
+        <relative rely_on="flipBook">
+          <rely_anchor x="center" y="center"/>
+          <base_anchor x="center" y="center"/>
+        </relative>
+      </position>
+      <transitions>
+        <tween event="activate" alpha="1" time=".15"/>
+        <tween event="deactivate" alpha="0" time=".15"/>
+      </transitions>
+    </ShadowElement>
+    <element id="menubar" priority="15" style="menubar">
+      <position>
+        <scale fit="width" ref="stage"/>
+        <relative rely_on="stage">
+          <rely_anchor x="left" y="top"/>
+          <base_anchor x="left" y="top"/>
+        </relative>
+      </position>
+      <content>
+        <rect height="60" alpha="0"/>
+        <background>
+          <rect/>
+        </background>
+      </content>
+    </element>
+    <element id="logo" priority="17" style="panelPrimary">
+      <position>
+        <relative rely_on="menubar">
+          <rely_anchor y="center"/>
+          <base_anchor y="center"/>
+        </relative>
+        <relative rely_on="stage">
+          <rely_anchor x="left"/>
+          <base_anchor x="left"/>
+        </relative>
+      </position>
+      <content>
+        <file url="$template$logo.png"/>
+        <padding left="22" right="10"/>
+      </content>
+      <useract type="url" param="http://www.webpublication.fr" event="click"/>
+      <transitions>
+        <tween event="activate" alpha="1" time=".2" delay=".2"/>
+        <tween event="deactivate" alpha="0" time=".2"/>
+      </transitions>
+    </element>
+    <element id="marque" priority="20" style="main">
+      <content>
+        <text text="btn_marque"/>
+      </content>
+      <position>
+        <relative rely_on="stage">
+          <rely_anchor x="right" y="bottom"/>
+          <base_anchor x="right" y="bottom"/>
+        </relative>
+        <margin x="-17"/>
+      </position>
+      <useract type="url" param="http://www.webpublication.fr" event="click"/>
+    </element>
+    <ZoomNext id="next_btn" priority="11">
+      <position>
+        <relative rely_on="stage">
+          <base_anchor x="right" y="center"/>
+          <rely_anchor x="right" y="center"/>
+        </relative>
+      </position>
+      <content>
+        <symbol lib_id="main_lib" id="zoom_next"/>
+        <filters>
+          <DropShadowFilter distance="3" alpha=".07" quality="3" blurX="6" blurY="6" color="0x000000"/>
+        </filters>
+      </content>
+      <useract type="nextPage" event="click" name="btn1"/>
+      <useract type="lastPage" event="click" name="btn2"/>
+      <transitions>
+        <tween event="activate" time=".2" delay=".4" transition="easeInOutCubic"/>
+        <tween event="deactivate" time=".2" transition="easeInOutCubic">
+          <position>
+            <relative rely_on="stage">
+              <base_anchor x="left" y="center"/>
+              <rely_anchor x="right" y="center"/>
+            </relative>
+          </position>
+        </tween>
+      </transitions>
+    </ZoomNext>
+    <ZoomPrev id="prev_btn" priority="11">
+      <position>
+        <relative rely_on="stage">
+          <base_anchor x="left" y="center"/>
+          <rely_anchor x="left" y="center"/>
+        </relative>
+      </position>
+      <content>
+        <symbol lib_id="main_lib" id="zoom_previous"/>
+        <filters>
+          <DropShadowFilter distance="3" alpha=".07" quality="3" blurX="6" blurY="6" color="0x000000"/>
+        </filters>
+      </content>
+      <useract type="prevPage" event="click" name="btn1"/>
+      <useract type="firstPage" event="click" name="btn2"/>
+      <transitions>
+        <tween event="activate" time=".2" delay=".4" transition="easeInOutCubic"/>
+        <tween event="deactivate" time=".2" transition="easeInOutCubic">
+          <position>
+            <relative rely_on="stage">
+              <base_anchor x="right" y="center"/>
+              <rely_anchor x="left" y="center"/>
+            </relative>
+          </position>
+        </tween>
+      </transitions>
+    </ZoomPrev>
+    <element id="drive_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="photo_hd"/>
+      </content>
+      <help value="#help_gallery#"/>
+      <useract type="setState" event="click" param="drive"/>
+    </element>
+    <element id="thumbnails_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="thumbnails"/>
+      </content>
+      <help value="#help_thumbnails_fullscreen#"/>
+      <useract type="setState" event="click" param="thumbnails"/>
+    </element>
+    <element id="summary_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="summary"/>
+      </content>
+      <help value="#help_summary#"/>
+      <useract type="toggleActivate" event="click" param="panel_summary"/>
+    </element>
+    <element id="print_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="print"/>
+      </content>
+      <help value="#help_print#"/>
+      <useract type="toggleActivate" event="click" param="panel_print"/>
+    </element>
+    <element id="pdf_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="pdf"/>
+      </content>
+      <help value="#help_pdf#"/>
+      <useract type="toggleActivate" event="click" param="panel_pdf"/>
+    </element>
+    <element id="search_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="search"/>
+      </content>
+      <help value="#help_search#"/>
+      <useract type="toggleActivate" event="click" param="panel_search"/>
+    </element>
+    <ButtonViewer id="viewer_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="viewer"/>
+      </content>
+      <help value="#help_slider#"/>
+      <useract type="toggleViewer" event="click"/>
+    </ButtonViewer>
+    <element id="zoom_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="zoom"/>
+      </content>
+      <help value="#help_zoom_in_and_out#"/>
+      <useract type="zoomPage" event="click" param="right"/>
+    </element>
+    <ButtonFullScreen id="fullscreen_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="fullscreen"/>
+      </content>
+      <help value="#help_fullscreen#"/>
+      <useract type="fullscreen" event="click"/>
+    </ButtonFullScreen>
+    <Group id="menu_left" priority="15">
+      <position>
+        <relative rely_on="logo">
+          <base_anchor x="left"/>
+          <rely_anchor x="right"/>
+        </relative>
+        <relative rely_on="menubar">
+          <base_anchor y="center"/>
+          <rely_anchor y="center"/>
+        </relative>
+      </position>
+      <group direction="horizontal" align="center">
+        <element id="thumbnails_btn"/>
+        <element id="summary_btn"/>
+        <element id="drive_btn"/>
+        <element id="pagemark_btn"/>
+      </group>
+      <content>
+        <padding left="10" right="10"/>
+      </content>
+    </Group>
+    <PageNavMenu id="page_control" priority="16" style="pageNav">
+      <content>
+        <symbol lib_id="main_lib" id="page_control"/>
+      </content>
+      <help value="#help_between_pages#"/>
+      <transitions>
+        <tween event="activate" alpha="1" time=".2" delay=".2"/>
+        <tween event="deactivate" alpha="0" time=".2"/>
+      </transitions>
+    </PageNavMenu>
+    <Group id="menu_center" priority="15">
+      <position>
+        <relative rely_on="menubar">
+          <base_anchor y="center" x="center"/>
+          <rely_anchor y="center" x="center"/>
+        </relative>
+      </position>
+      <group direction="horizontal" align="center">
+        <element id="page_control"/>
+      </group>
+      <content>
+        <padding left="10" right="10"/>
+      </content>
+    </Group>
+    <element id="pagemark_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="pagemark_icon"/>
+      </content>
+      <help value="#help_pagemark#"/>
+      <useract type="bookmark" event="click" param="#menu_btn_label_pagemark#"/>
+    </element>
+    <element id="notes_list_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="notes_list"/>
+      </content>
+      <help value="#help_notes#"/>
+      <useract type="toggleActivate" event="click" param="panel_notes"/>
+    </element>
+    <element id="email_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="email"/>
+      </content>
+      <help value="#help_sendtofriend#"/>
+      <useract type="toggleActivate" event="click" param="panel_email"/>
+    </element>
+    <element id="share_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="share"/>
+      </content>
+      <help value="#help_sendtofriend#"/>
+      <useract type="toggleActivate" event="click" param="panel_share"/>
+    </element>
+    <element id="facebook_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="facebook"/>
+      </content>
+      ~#
+      <help value="#help_fb_share#"/>
+      <useract type="facebookShare" event="click"/>
+    </element>
+    <element id="twitter_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="twitter"/>
+      </content>
+      <help value="#help_twitter_share#"/>
+      <useract type="twitterShare" event="click"/>
+    </element>
+    <element id="linkedin_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="linkedin"/>
+      </content>
+      <help value="#help_linkedin_share#"/>
+      <useract type="linkedinShare" event="click"/>
+    </element>
+    <element id="pinterest_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="pinterest"/>
+      </content>
+      <help value="#help_pinterest_share#"/>
+      <useract type="pinterestShare" event="click"/>
+    </element>
+    <element id="tumblr_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="tumblr"/>
+      </content>
+      <help value="#help_tumblr_share#"/>
+      <useract type="tumblrShare" event="click"/>
+    </element>
+    <AutoPlayButton id="autoplay_btn" priority="16" style="menu" config="menubutton">
+      <content tint="true" usetintpbj="false">
+        <symbol lib_id="main_lib" id="autoplay"/>
+        <padding left="12" right="12"/>
+      </content>
+      <help value="#help_autoplay#"/>
+      <useract type="autoplay" event="click"/>
+      <transitions>
+        <tween event="activate" alpha="1" time=".2" delay=".2"/>
+        <tween event="deactivate" alpha="0" time=".2"/>
+      </transitions>
+    </AutoPlayButton>
+    <element id="help_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="help"/>
+      </content>
+      <useract type="help" event="over"/>
+      <useract type="tooltip" event="over" param="#tooltip_help#"/>
+      <useract type="back" event="out"/>
+    </element>
+    <element id="spacerMenuLeft1" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="spacer"/>
+      </content>
+    </element>
+    <element id="spacerMenuLeft2" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="spacer"/>
+      </content>
+    </element>
+    <Group id="menu_right" priority="15">
+      <position>
+        <relative rely_on="menubar">
+          <base_anchor x="right" y="center"/>
+          <rely_anchor x="right" y="center"/>
+        </relative>
+      </position>
+      <group direction="horizontal" align="center">
+        <element id="fullscreen_btn"/>
+        <element id="spacerMenuLeft1"/>
+        <element id="share_btn"/>
+        <element id="print_btn"/>
+        <element id="pdf_btn"/>
+        <element id="spacerMenuLeft2"/>
+        <element id="search_btn"/>
+        <element id="help_btn"/>
+      </group>
+      <content>
+        <padding left="10" right="10" top="10"/>
+      </content>
+    </Group>
+    <element id="selectAll_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="select_all"/>
+      </content>
+      <help value="#help_select_all#"/>
+      <useract type="select" event="click" param="all"/>
+    </element>
+    <element id="deselectAll_btn" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="deselect_all"/>
+      </content>
+      <help value="#help_deselect_all#"/>
+      <useract type="deselect" event="click" param="all"/>
+    </element>
+    <element id="spacerThumb1" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="spacer"/>
+      </content>
+    </element>
+    <element id="pdf_btn2" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="pdf"/>
+      </content>
+      <help value="#help_pdf#"/>
+      <useract type="pdf" event="click" param="select"/>
+    </element>
+    <element id="email_btn2" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="email"/>
+      </content>
+      <help value="#help_sendtofriend#"/>
+      <useract type="share" event="click" param="bookmark"/>
+    </element>
+    <element id="print_btn2" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="print"/>
+      </content>
+      <help value="#help_print#"/>
+      <useract type="print" event="click" param="select"/>
+    </element>
+    <element id="spacerThumb2" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="spacer"/>
+      </content>
+    </element>
+    <element id="back_btn2" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="back"/>
+      </content>
+      <help value="#help_back#"/>
+      <useract type="back" event="click"/>
+    </element>
+    <element id="help_btn_thumb" template="btn_menu">
+      <content>
+        <symbol lib_id="main_lib" id="help"/>
+      </content>
+      <useract type="help" event="over"/>
+      <useract type="back" event="out"/>
+    </element>
+    <Group id="menu_thumbnail">
+      <position>
+        <relative rely_on="menubar">
+          <base_anchor x="right" y="center"/>
+          <rely_anchor x="right" y="center"/>
+        </relative>
+      </position>
+      <group direction="horizontal" align="center">
+        <element id="selectAll_btn"/>
+        <element id="deselectAll_btn"/>
+        <element id="spacerThumb1"/>
+        <element id="pdf_btn2"/>
+        <element id="email_btn2"/>
+        <element id="print_btn2"/>
+        <element id="spacerThumb2"/>
+        <element id="back_btn2"/>
+        <element id="help_btn_thumb"/>
+      </group>
+      <content>
+        <padding left="10" right="10" top="10"/>
+      </content>
+    </Group>
+    <ThumbnailPanel id="panel_thumbnails" config="thumbnails" closeButton="false" template="state_panel">
+      <transitions>
+        <tween event="activate" time=".7" transition="easeInOutCubic"/>
+        <tween event="deactivate" time=".5" transition="easeInOutCubic"/>
+      </transitions>
+    </ThumbnailPanel>
+    <Help id="help" priority="49">
+      <position>
+        <copy ref="stage" prop="all">
+          <margins top="80"/>
+        </copy>
+      </position>
+      <content>
+        <rect alpha="0"/>
+        <background>
+          <rect/>
+        </background>
+      </content>
+      <transitions>
+        <tween event="activate" alpha="1" time=".15"/>
+        <tween event="deactivate" alpha="0" time=".1"/>
+      </transitions>
+    </Help>
+    <element id="help_mouse" priority="50" style="menu">
+      <position>
+        <relative rely_on="flipBook">
+          <rely_anchor x="center" y="center"/>
+          <base_anchor x="center" y="center"/>
+        </relative>
+      </position>
+      <content tint="true" usetintpbj="true">
+        <symbol lib_id="main_lib" id="help_mouse"/>
+      </content>
+      <help value="#help_zoom_in_and_out#" position="ml" shiftX="-25"/>
+    </element>
+    <element id="help_keys" priority="50" style="menu">
+      <position>
+        <relative rely_on="flipBook">
+          <rely_anchor x="center" y="bottom"/>
+          <base_anchor x="center" y="bottom"/>
+        </relative>
+      </position>
+      <content tint="true" usetintpbj="true">
+        <symbol lib_id="main_lib" id="help_keys"/>
+        <padding bottom="50"/>
+      </content>
+      <help value="#help_corner_turn_pages_keyboard#" position="tc" shiftY="-15"/>
+    </element>
+    <element id="help_corner" priority="50" style="help_corner">
+      <position>
+        <relative rely_on="flipBook">
+          <rely_anchor x="right" y="bottom"/>
+          <base_anchor x="center" y="center"/>
+        </relative>
+      </position>
+      <content>
+        <circle radius="50"/>
+      </content>
+      <help value="#help_corner_turn_pages#" position="ml" shiftX="-40" shiftY="0"/>
+    </element>
+    <element id="help_next" priority="50" style="help_corner">
+      <position>
+        <relative rely_on="next_btn">
+          <rely_anchor x="center" y="center"/>
+          <base_anchor x="center" y="center"/>
+        </relative>
+      </position>
+      <content>
+        <circle radius="50"/>
+      </content>
+      <help value="#help_next_pages#" position="ml" shiftX="-30" shiftY="-5"/>
+    </element>
+    <element id="help_prev" priority="50" style="help_corner">
+      <position>
+        <relative rely_on="prev_btn">
+          <rely_anchor x="0.7" y="center"/>
+          <base_anchor x="center" y="center"/>
+        </relative>
+      </position>
+      <content>
+        <circle radius="50"/>
+      </content>
+      <help value="#help_prev_pages#" position="mr" shiftX="120" shiftY="-5"/>
+    </element>
+    <ToolTip id="tooltip" priority="99">
+      <position>
+        <constrain ref="stage" prop="position"/>
+      </position>
+      <content>
+        <padding value="4"/>
+        <text antialias="true" embedfonts="false" text="pagelabel_leftpage"/>
+        <background>
+          <roundrect radius="2"/>
+        </background>
+      </content>
+      <transitions>
+        <tween event="activate" alpha="1" time=".2"/>
+        <tween event="deactivate" y="-5" alpha="0" time=".2"/>
+      </transitions>
+    </ToolTip>
+    <FileToolTip id="filetooltip" priority="99">
+      <mod event="pageChange" action="deactivate"/>
+      <position>
+        <contextMenu margin="5" shiftX="20"/>
+      </position>
+      <content>
+        <padding value="2"/>
+        <background>
+          <roundrect radius="2"/>
+          <filters>
+            <DropShadowFilter distance="3" alpha=".45" quality="3" blurX="8" blurY="8"/>
+          </filters>
+        </background>
+      </content>
+      <transitions>
+        <tween event="activate" alpha="1" time=".2"/>
+        <tween event="deactivate" alpha="0" time=".1"/>
+      </transitions>
+    </FileToolTip>
+    <InfoPanel id="info" priority="98" template="center_panel">
+      <content>
+        <text/>
+        <padding value="15"/>
+        <background>
+          <roundrect radius="4"/>
+          <filters>
+            <DropShadowFilter distance="3" alpha=".45" quality="3" blurX="8" blurY="8"/>
+          </filters>
+        </background>
+      </content>
+      <useract type="deactivate" event="click" param="info"/>
+    </InfoPanel>
+    <ModalMessage id="modal" priority="51" template="center_panel">
+      <content>
+        <text/>
+        <padding value="1205"/>
+        <background>
+          <rect/>
+        </background>
+      </content>
+    </ModalMessage>
+    <Bookmarks id="bookmarks" priority="17">
+      <position>
+        <changeMargin target="flipBook" to="top" from="height"/>
+        <changeMargin target="shadow" to="top" from="height"/>
+        <scale fit="width" ref="flipBook"/>
+        <relative rely_on="flipBook">
+          <rely_anchor x="center" y="top"/>
+          <base_anchor x="center" y="bottom"/>
+        </relative>
+      </position>
+      <content/>
+    </Bookmarks>
+    <NotesBoard id="notesBoard" priority="16">
+      <position>
+        <scale fit="exact" ref="flipBook"/>
+        <relative rely_on="flipBook">
+          <rely_anchor x="center" y="center"/>
+          <base_anchor x="center" y="center"/>
+        </relative>
+      </position>
+    </NotesBoard>
+    <NotesPanel2 id="panel_notes" template="centralPanel">
+      <title>#panel_notes_title#</title>
+      <close shiftX="-20" shiftY="20"/>
+      <position width="500" height="500"/>
+      <content>
+        <padding value="0" top="80"/>
+        <symbol lib_id="main_lib" id="panel_notes"/>
+      </content>
+    </NotesPanel2>
+    <SummaryPanel id="panel_summary" template="centralPanel" assetId="summary" style="panelprimary" itemSpace="-1" rendererStyle2="summaryItem2">
+      <title>#panel_summary_title#</title>
+      <close shiftX="-20" shiftY="20"/>
+      <content>
+        <padding value="0" top="97"/>
+        <background>
+          <rect/>
+        </background>
+      </content>
+    </SummaryPanel>
+    <PDFPanel2 id="panel_pdf" template="centralPanel" config="pdfPanel">
+      <close shiftX="20" shiftY="-20"/>
+      <title>#panel_pdf_title#</title>
+      <content>
+        <padding value="40" top="90" bottom="40"/>
+        <symbol lib_id="main_lib" id="panel_pdf"/>
+      </content>
+    </PDFPanel2>
+    <PrintPanel2 id="panel_print" template="centralPanel">
+      <close shiftX="20" shiftY="-20"/>
+      <title>#panel_print_title#</title>
+      <content>
+        <padding value="40" top="90" bottom="40"/>
+        <symbol lib_id="main_lib" id="panel_print"/>
+      </content>
+    </PrintPanel2>
+    <EmailPanel2 id="panel_email" template="centralPanel">
+      <close shiftX="25" shiftY="-25"/>
+      <title>#panel_sendtofriend_title#</title>
+      <content>
+        <padding value="45" top="85"/>
+        <symbol lib_id="main_lib" id="panel_email"/>
+      </content>
+    </EmailPanel2>
+    <SharePanel id="panel_share" template="centralPanel">
+      <close shiftX="-21" shiftY="20"/>
+      <title y="31">#panel_sendtofriend_title#</title>
+      <content>
+        <padding value="0" top="95"/>
+        <symbol lib_id="main_lib" id="panel_share"/>
+      </content>
+    </SharePanel>
+    <Search2 id="panel_search" template="centralPanel">
+      <title x="40" y="40" style="paneltitle">#panel_search_title#</title>
+      <close shiftX="-20" shiftY="20"/>
+      <position width="490" height="600">
+        <constrain ref="stage" prop="all">
+          <margins value="50"/>
+        </constrain>
+      </position>
+      <content>
+        <padding value="0" top="80"/>
+        <symbol lib_id="main_lib" id="panel_search"/>
+      </content>
+    </Search2>
+    <DrivePanel id="panel_drive" priority="10" config="drive" closeButton="false" style="driveView">
+      <position>
+        <relative rely_on="stage">
+          <rely_anchor x="left" y="top"/>
+          <base_anchor x="left" y="top"/>
+        </relative>
+        <copy prop="all" ref="stage">
+          <margins top="110"/>
+        </copy>
+      </position>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </DrivePanel>
+    <element id="drive_menubar" priority="16" style="driveMenu">
+      <position>
+        <scale fit="width" ref="stage"/>
+        <relative rely_on="stage">
+          <rely_anchor x="left" y="top"/>
+          <base_anchor x="left" y="top"/>
+        </relative>
+      </position>
+      <content>
+        <rect height="60" alpha="0"/>
+        <background>
+          <rect/>
+        </background>
+      </content>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </element>
+    <DriveBreadCrumb id="drive_breadcrumb" priority="17">
+      <position>
+        <relative rely_on="drive_breadcrumb_bar">
+          <rely_anchor x="left" y="center"/>
+          <base_anchor x="left" y="center"/>
+        </relative>
+        <margin x="40"/>
+      </position>
+      <content/>
+      <useract type="tooltip" event="over" param="#tooltip_breadcrumb#"/>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </DriveBreadCrumb>
+    <element id="drive_breadcrumb_bar" priority="16" style="driveBreadcrumb">
+      <position>
+        <scale fit="width" ref="drive_menubar"/>
+        <relative rely_on="drive_menubar">
+          <rely_anchor x="left" y="bottom"/>
+          <base_anchor x="left" y="top"/>
+        </relative>
+      </position>
+      <content>
+        <rect height="50" alpha="0"/>
+        <background>
+          <rect/>
+        </background>
+      </content>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </element>
+    <element id="drive_select" priority="17" style="driveMenu">
+      <content>
+        <text text="drive_button_select_label"/>
+        <padding left="12" right="12"/>
+      </content>
+      <useract type="setState" param="drive_select" event="click"/>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </element>
+    <element id="drive_share" priority="17" style="driveMenu">
+      <content>
+        <text text="drive_button_share_label_all"/>
+        <padding left="12" right="12"/>
+      </content>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+      <useract type="driveShare" param="all" event="click"/>
+    </element>
+    <element id="drive_download" priority="17" style="driveMenu">
+      <content>
+        <text text="drive_button_download_label_all"/>
+        <padding left="12" right="12"/>
+      </content>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+      <useract type="driveDownload" param="all" event="click"/>
+    </element>
+    <element id="drive_close" priority="17" style="driveMenu">
+      <content>
+        <text text="drive_button_close_label"/>
+        <padding left="12" right="12"/>
+      </content>
+      <useract type="setState" param="default" event="click"/>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </element>
+    <Group id="menu_drive">
+      <position>
+        <relative rely_on="drive_menubar">
+          <base_anchor x="right" y="center"/>
+          <rely_anchor x="right" y="center"/>
+        </relative>
+      </position>
+      <group direction="horizontal" align="center">
+        <element id="drive_select"/>
+        <element id="drive_share"/>
+        <element id="drive_download"/>
+        <element id="drive_close"/>
+      </group>
+      <content>
+        <padding left="38" right="38" top="10"/>
+      </content>
+    </Group>
+    <element id="drive_select_share" priority="17" style="driveSelectMenu">
+      <content>
+        <text text="drive_select_button_share_label"/>
+        <padding top="4" bottom="5" left="12" right="13"/>
+        <background>
+          <roundrect radius="2"/>
+        </background>
+      </content>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+      <useract type="driveShare" param="selected" event="click"/>
+    </element>
+    <element id="drive_select_download" priority="17" style="driveSelectMenu">
+      <content>
+        <text text="drive_select_button_download_label"/>
+        <padding top="4" bottom="5" left="12" right="13"/>
+        <background>
+          <roundrect radius="2"/>
+        </background>
+      </content>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+      <useract type="driveDownload" param="selected" event="click"/>
+    </element>
+    <element id="drive_select_close" priority="17" style="driveSelectCancel">
+      <content>
+        <text text="drive_select_button_close_label"/>
+        <padding top="3" bottom="4" left="12" right="13"/>
+        <background>
+          <roundrect radius="3"/>
+        </background>
+      </content>
+      <useract type="back" event="click"/>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </element>
+    <Group id="menu_drive_select">
+      <position>
+        <relative rely_on="drive_menubar">
+          <base_anchor x="right" y="center"/>
+          <rely_anchor x="right" y="center"/>
+        </relative>
+      </position>
+      <group direction="horizontal" align="center" spacing="14">
+        <element id="drive_select_share"/>
+        <element id="drive_select_download"/>
+        <element id="drive_select_close"/>
+      </group>
+      <content>
+        <padding left="38" right="42" top="10"/>
+      </content>
+    </Group>
+    <element id="drive_theatre_background" priority="15" style="driveTheatreBackground">
+      <position>
+        <scale fit="exact" ref="stage"/>
+        <relative rely_on="stage">
+          <rely_anchor x="left" y="top"/>
+          <base_anchor x="left" y="top"/>
+        </relative>
+      </position>
+      <content>
+        <rect/>
+      </content>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </element>
+    <element id="drive_theatre_menubar" priority="17" style="driveTheatreMenu">
+      <position>
+        <scale fit="width" ref="stage"/>
+        <relative rely_on="stage">
+          <rely_anchor x="left" y="top"/>
+          <base_anchor x="left" y="top"/>
+        </relative>
+      </position>
+      <content>
+        <rect height="80" alpha="0"/>
+        <background>
+          <rect/>
+        </background>
+      </content>
+    </element>
+    <DriveTheatreInfo id="drive_theatre_info" priority="18" style="driveTheatreInfo">
+      <position>
+        <relative rely_on="drive_theatre_menubar">
+          <base_anchor x="left" y="center"/>
+          <rely_anchor x="left" y="center"/>
+        </relative>
+        <margin x="33" y="-13"/>
+      </position>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </DriveTheatreInfo>
+    <MenuButton id="drive_theatre_share" priority="18" style="driveTheatreMenu">
+      <content tint="true" usetintpbj="false">
+        <symbol lib_id="main_lib" id="share"/>
+        <padding left="10" right="10"/>
+      </content>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+      <useract type="driveShare" param="current" event="click"/>
+    </MenuButton>
+    <MenuButton id="drive_theatre_download" priority="18" style="driveTheatreMenu">
+      <content tint="true" usetintpbj="false">
+        <symbol lib_id="main_lib" id="drive_download"/>
+        <padding left="10" right="10"/>
+      </content>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+      <useract type="driveDownload" param="current" event="click"/>
+    </MenuButton>
+    <MenuButton id="drive_theatre_info_btn" priority="18" style="driveTheatreMenu">
+      <content tint="true" usetintpbj="false">
+        <symbol lib_id="main_lib" id="drive_info"/>
+        <padding left="10" right="10"/>
+      </content>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+      <useract type="driveInfo" param="current" event="click"/>
+    </MenuButton>
+    <MenuButton id="drive_theatre_close" priority="18" style="driveTheatreMenu">
+      <content tint="true" usetintpbj="false">
+        <symbol lib_id="main_lib" id="back"/>
+        <padding left="10" right="10"/>
+      </content>
+      <useract type="back" event="click"/>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </MenuButton>
+    <Group id="drive_theatre_menu">
+      <position>
+        <relative rely_on="drive_theatre_menubar">
+          <base_anchor x="right" y="center"/>
+          <rely_anchor x="right" y="center"/>
+        </relative>
+      </position>
+      <group direction="horizontal" align="center">
+        <element id="drive_theatre_download"/>
+        <element id="drive_theatre_share"/>
+        <element id="drive_theatre_info_btn"/>
+        <element id="drive_theatre_close"/>
+      </group>
+      <content>
+        <padding left="40" right="40"/>
+      </content>
+    </Group>
+    <GalleryNext id="drive_theatre_next" priority="23">
+      <position>
+        <relative rely_on="stage">
+          <base_anchor x="right" y="center"/>
+          <rely_anchor x="right" y="center"/>
+        </relative>
+      </position>
+      <content>
+        <symbol lib_id="main_lib" id="drive_theatre_next"/>
+      </content>
+      <useract type="readerNextSource" event="click"/>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </GalleryNext>
+    <GalleryPrev id="drive_theatre_prev" priority="23">
+      <position>
+        <relative rely_on="stage">
+          <base_anchor x="left" y="center"/>
+          <rely_anchor x="left" y="center"/>
+        </relative>
+      </position>
+      <content>
+        <symbol lib_id="main_lib" id="drive_theatre_prev"/>
+      </content>
+      <useract type="readerPrevSource" event="click"/>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </GalleryPrev>
+    <element id="drive_info_back" priority="18" style="driveMenu">
+      <position>
+        <relative rely_on="drive_menubar">
+          <base_anchor y="center"/>
+          <rely_anchor y="center"/>
+        </relative>
+        <relative rely_on="stage">
+          <base_anchor x="right"/>
+          <rely_anchor x="right"/>
+        </relative>
+      </position>
+      <content>
+        <text text="drive_info_close_label"/>
+        <padding left="50" right="50"/>
+      </content>
+      <useract type="back" event="click"/>
+      <transitions>
+        <tween event="activate" time=".2" alpha="1" transition="easeInSine"/>
+        <tween event="deactivate" time=".2" alpha="0" transition="easeInSine"/>
+      </transitions>
+    </element>
+    <DriveInfo id="drive_info_details" priority="18">
+      <position>
+        <scale fit="inside" ref="stage" keep_ratio="false">
+          <margins left="0" top="110" right="0" bottom="0"/>
+        </scale>
+      </position>
+    </DriveInfo>
+    <GraphicReader priority="21" id="graphic_reader" style="driveTheatreReader">
+      <position>
+        <scale fit="inside" ref="stage">
+          <margins left="90" top="80" right="90" bottom="50"/>
+        </scale>
+      </position>
+      <content/>
+    </GraphicReader>
+    <ZoomMenu id="zoom_menu" template="state_menu" style="zoomMenu">
+      <content>
+        <symbol lib_id="main_lib" id="zoom_menu"/>
+      </content>
+      <transitions>
+        <tween event="activate" alpha="1" time=".2" delay=".2"/>
+        <tween event="deactivate" alpha="0" time=".2"/>
+      </transitions>
+    </ZoomMenu>
+    <ZoomElement id="zoomArea" priority="17"/>
+    <Popup id="popup" priority="40" style="panelPrimary" friends="canvas">
+      <state id="optional"/>
+      <exclusivity id="panel"/>
+      <position>
+        <relative rely_on="stage">
+          <rely_anchor x="center" y="center"/>
+          <base_anchor x="center" y="center"/>
+        </relative>
+      </position>
+      <content>
+        <padding value="10" top="30"/>
+        <rect/>
+        <background>
+          <rect/>
+        </background>
+      </content>
+      <transitions>
+        <tween event="activate" alpha="1" transition="easeOutIn" time=".3"/>
+        <tween event="deactivate" alpha="0" transition="easeOutIn" time="0.15"/>
+      </transitions>
+    </Popup>
+    <element id="canvas" priority="39" style="canvas">
+      <state id="optional"/>
+      <position>
+        <scale fit="exact" ref="stage"/>
+        <relative rely_on="stage">
+          <rely_anchor x="left" y="top"/>
+          <base_anchor x="left" y="top"/>
+        </relative>
+      </position>
+      <content>
+        <rect/>
+      </content>
+      <useract type="setState" event="click" param="current"/>
+    </element>
+    <element id="fullStage" priority="41" style="fullStage">
+      <position>
+        <copy ref="stage" prop="all"/>
+      </position>
+      <content>
+        <rect/>
+        <background>
+          <rect/>
+        </background>
+      </content>
+    </element>
+    <element id="back_btn" priority="31" style="statePanel">
+      <position>
+        <relative rely_on="stage">
+          <base_anchor x="right" y="top"/>
+          <rely_anchor x="right" y="top"/>
+        </relative>
+      </position>
+      <content tint="true" usetintpbj="false">
+        <padding top="10" left="10" right="10"/>
+        <symbol lib_id="main_lib" id="quit_button"/>
+        <background>
+          <roundrect radius="5"/>
+        </background>
+      </content>
+      <useract type="back" event="click"/>
+    </element>
+    <MultiLink id="multiLink" priority="50">
+      <state id="optional"/>
+      <position>
+        <contextMenu margin="5" shiftX="20"/>
+        <constrain ref="stage" prop="position"/>
+      </position>
+      <content/>
+    </MultiLink>
+  </uielements>
+  <exclusivities/>
+  <templates>
+    <multilinkItem id="multilinkItem">
+      <content style="multiLink" style2="multiLink">
+        <padding value="10"/>
+        <text/>
+        <background>
+          <rect/>
+        </background>
+      </content>
+    </multilinkItem>
+    <element id="centralPanel" priority="40" closeButton="true" closeText="false" close_lib="main_lib" friends="canvas">
+      <close shiftX="15" shiftY="-15"/>
+      <title x="35" y="35" style="paneltitle"/>
+      <exclusivity id="panel"/>
+      <state id="optional"/>
+      <position>
+        <relative rely_on="stage">
+          <rely_anchor x="center" y="center"/>
+          <base_anchor x="center" y="center"/>
+        </relative>
+      </position>
+      <content>
+        <padding value="30" top="60"/>
+        <background>
+          <rect/>
+        </background>
+      </content>
+      <transitions>
+        <tween event="activate" alpha="1" time=".2"/>
+        <tween event="deactivate" alpha="0" time=".2"/>
+      </transitions>
+    </element>
+    <MenuButton id="btn_menu" priority="16" style="menu" config="menubutton">
+      <content tint="true" usetintpbj="false">
+        <padding left="12" right="12"/>
+      </content>
+      <transitions>
+        <tween event="activate" alpha="1" time=".2" delay=".2"/>
+        <tween event="deactivate" alpha="0" time=".2"/>
+      </transitions>
+    </MenuButton>
+    <Spacer id="spacer" priority="16" style="menu" config="menubutton">
+      <content tint="true" usetintpbj="false">
+        <symbol lib_id="main_lib" id="spacer"/>
+        <padding left="12" right="12"/>
+      </content>
+      <transitions>
+        <tween event="activate" alpha="1" time=".2" delay=".2"/>
+        <tween event="deactivate" alpha="0" time=".2"/>
+      </transitions>
+    </Spacer>
+    <element id="state_panel" priority="10" closeButton="false">
+      <position>
+        <relative rely_on="stage">
+          <rely_anchor x="left" y="top"/>
+          <base_anchor x="left" y="top"/>
+        </relative>
+        <copy prop="all" ref="stage">
+          <margins top="57"/>
+        </copy>
+      </position>
+      <content/>
+      <transitions>
+        <tween event="activate" time=".2"/>
+        <tween event="deactivate" time=".2">
+          <position>
+            <relative rely_on="stage">
+              <rely_anchor x="left" y="top"/>
+              <base_anchor x="right" y="top"/>
+            </relative>
+            <margin y="57"/>
+          </position>
+        </tween>
+      </transitions>
+    </element>
+    <element id="state_menu" priority="11">
+      <position>
+        <relative rely_on="stage">
+          <base_anchor x="right" y="top"/>
+          <rely_anchor x="right" y="top"/>
+        </relative>
+        <margin x="-20" y="10"/>
+        <constrain ref="stage" prop="position" margin="20"/>
+      </position>
+      <content>
+        <padding value="5"/>
+        <background>
+          <roundrect radius="3"/>
+        </background>
+      </content>
+    </element>
+    <element id="center_panel">
+      <position>
+        <relative rely_on="stage">
+          <rely_anchor x="center" y="center"/>
+          <base_anchor x="center" y="center"/>
+        </relative>
+      </position>
+      <transitions>
+        <tween event="activate" alpha="1" time=".1"/>
+        <tween event="deactivate" alpha="0" time=".2">
+          <position>
+            <relative rely_on="stage">
+              <rely_anchor x="center" y="center"/>
+              <base_anchor x="center" y="center"/>
+            </relative>
+          </position>
+        </tween>
+      </transitions>
+    </element>
+    <tabtemplate id="default">
+      <it>
+        <padding value="5"/>
+        <background>
+          <rect/>
+          <filters>
+            <DropShadowFilter distance="5" alpha=".40" quality="3" blurX="10" blurY="10"/>
+          </filters>
+        </background>
+      </it>
+    </tabtemplate>
+    <Window id="window" priority="20" closeButton="true" style="panelPrimary" lightboxClose="true" close_lib="main_lib">
+      <title>Window title</title>
+      <state id="default"/>
+      <position>
+        <original prop="all"/>
+        <constrain ref="stage" prop="all">
+          <margins value="20"/>
+        </constrain>
+      </position>
+      <content>
+        <padding value="5"/>
+        <rect/>
+        <background>
+          <roundrect radius="0" color="0" alpha="1"/>
+          <filters>
+            <DropShadowFilter distance="1" alpha=".75" quality="3" blurX="6" blurY="6" color="0x000000"/>
+          </filters>
+        </background>
+      </content>
+      <transitions>
+        <tween event="activate" alpha="1" time=".15"/>
+        <tween event="deactivate" alpha="0" time=".1"/>
+      </transitions>
+    </Window>
+    <it id="default">
+      <padding left="40" right="80" top="15" bottom="16"/>
+      <background>
+        <rect/>
+      </background>
+    </it>
+    <element id="default_background" priority="1" style="background" gpu="true">
+      <position>
+        <scale fit="exact" ref="stage"/>
+        <relative rely_on="stage">
+          <rely_anchor x="left" y="top"/>
+          <base_anchor x="left" y="top"/>
+        </relative>
+      </position>
+      <content>
+        <rect/>
+      </content>
+    </element>
+  </templates>
+  <collisions>
+    <group id="0">
+      <element id="outside"/>
+      <element id="logo">
+        <position>
+          <relative rely_on="stage">
+            <rely_anchor x="left" y="top"/>
+            <base_anchor x="left" y="top"/>
+          </relative>
+        </position>
+      </element>
+    </group>
+    <group id="1">
+      <element id="menu_left"/>
+      <element id="menu_center">
+        <position>
+          <relative rely_on="menu_left">
+            <rely_anchor x="right"/>
+            <base_anchor x="left"/>
+          </relative>
+          <relative rely_on="menubar">
+            <base_anchor y="center"/>
+            <rely_anchor y="center"/>
+          </relative>
+        </position>
+      </element>
+      <element id="menu_right">
+        <position>
+          <relative rely_on="menu_center">
+            <rely_anchor x="right"/>
+            <base_anchor x="left"/>
+          </relative>
+          <relative rely_on="menubar">
+            <base_anchor y="center"/>
+            <rely_anchor y="center"/>
+          </relative>
+        </position>
+      </element>
+    </group>
+  </collisions>
+  <states>
+    <state id="default">
+      <excludeState id="optional"/>
+      <excludeState id="zoom"/>
+      <included id="flipBook"/>
+      <included id="slider"/>
+      <included id="background"/>
+      <included id="prev_btn"/>
+      <included id="next_btn"/>
+      <included id="logo"/>
+    </state>
+    <state id="thumbnails" model="exclude" deactivateDelay="500">
+      <included id="background"/>
+      <included id="menubar"/>
+      <included id="logo"/>
+      <included id="panel_thumbnails"/>
+      <included id="menu_thumbnail"/>
+    </state>
+    <state id="drive" model="exclude">
+      <included id="background"/>
+      <included id="drive_menubar"/>
+      <included id="drive_breadcrumb_bar"/>
+      <included id="menubar"/>
+      <included id="logo"/>
+      <included id="panel_drive"/>
+      <included id="drive_breadcrumb"/>
+      <included id="menu_drive"/>
+    </state>
+    <state id="drive_select" model="exclude">
+      <included id="drive_breadcrumb_bar"/>
+      <included id="background"/>
+      <included id="drive_menubar"/>
+      <included id="panel_drive"/>
+      <included id="menu_drive_select"/>
+    </state>
+    <state id="drive_info" model="exclude">
+      <included id="drive_breadcrumb_bar"/>
+      <included id="background"/>
+      <included id="drive_menubar"/>
+      <included id="drive_info_details"/>
+      <included id="drive_info_back"/>
+    </state>
+    <state id="drive_theatre" model="exclude">
+      <included id="drive_theatre_menubar"/>
+      <included id="drive_theatre_menu"/>
+      <included id="drive_theatre_background"/>
+      <included id="drive_theatre_info"/>
+      <included id="graphic_reader"/>
+      <included id="drive_theatre_next"/>
+      <included id="drive_theatre_prev"/>
+    </state>
+    <state id="zoom" model="exclude">
+      <included id="background"/>
+      <included id="flipBook"/>
+      <included id="slider"/>
+      <included id="prev_btn"/>
+      <included id="next_btn"/>
+      <included id="zoom_menu"/>
+    </state>
+    <state id="help">
+      <includeState id="default"/>
+      <included id="help"/>
+      <included id="help_mouse"/>
+      <included id="help_keys"/>
+      <included id="prev_btn"/>
+      <included id="next_btn"/>
+    </state>
+    <state id="help_flipbook">
+      <includeState id="help"/>
+      <included id="help_corner"/>
+    </state>
+    <state id="help_slider">
+      <includeState id="help"/>
+      <included id="help_next"/>
+      <included id="help_prev"/>
+    </state>
+    <state id="help_thumbnails">
+      <includeState id="thumbnails"/>
+      <included id="help"/>
+    </state>
+    <state id="optional" model="exclude">
+      <included id="drive_theatre_menu"/>
+      <included id="drive_theatre_menubar"/>
+      <included id="drive_theatre_info"/>
+      <included id="drive_theatre_info_btn"/>
+      <included id="drive_theatre_background"/>
+      <included id="drive_theatre_share"/>
+      <included id="drive_theatre_download"/>
+      <included id="drive_theatre_close"/>
+      <included id="drive_theatre_next"/>
+      <included id="drive_theatre_prev"/>
+      <included id="drive_info_details"/>
+      <included id="drive_info_back"/>
+      <included id="drive_menubar"/>
+      <included id="drive_breadcrumb"/>
+      <included id="drive_breadcrumb_bar"/>
+      <included id="drive_select_share"/>
+      <included id="drive_select_download"/>
+      <included id="drive_select_close"/>
+      <included id="graphic_reader"/>
+      <included id="menu_drive"/>
+      <included id="menu_drive_select"/>
+      <included id="panel_drive"/>
+      <included id="thumbnail"/>
+      <included id="tooltip"/>
+      <included id="filetooltip"/>
+      <included id="modal"/>
+      <included id="info"/>
+      <included id="popup"/>
+      <included id="fullStage"/>
+      <included id="panel_thumbnails"/>
+      <included id="menu_thumbnail"/>
+      <included id="email_btn"/>
+      <included id="help"/>
+      <included id="help_mouse"/>
+      <included id="help_keys"/>
+      <included id="help_corner"/>
+      <included id="help_next"/>
+      <included id="help_prev"/>
+      <included id="facebook_btn"/>
+      <included id="twitter_btn"/>
+      <included id="linkedin_btn"/>
+      <included id="notes_list_btn"/>
+      <included id="viewer_btn"/>
+      <included id="pinterest_btn"/>
+      <included id="autoplay_btn"/>
+      <included id="tumblr_btn"/>
+      <included id="graphic_reader"/>
+      <included id="back_btn"/>
+      <included id="zoomArea"/>
+      <included id="zoom_btn"/>
+    </state>
+  </states>
+  <editable>
+    <menu>
+      <element id="menu_left"/>
+      <element id="menu_right"/>
+    </menu>
+    <icons>
+      <element id="cart_btn"/>
+      <element id="close_btn"/>
+      <element id="first_btn"/>
+      <element id="last_btn"/>
+      <element id="next_btn"/>
+      <element id="prev_btn"/>
+      <element id="linkedin_btn"/>
+      <element id="sound_btn"/>
+      <element id="twitter_btn"/>
+      <element id="tumblr_btn"/>
+      <element id="pinterest_btn"/>
+      <element id="summary_btn"/>
+      <element id="viewer_btn"/>
+      <element id="search_btn"/>
+      <element id="pdf_btn"/>
+      <element id="facebook_btn"/>
+      <element id="zoom_btn"/>
+      <element id="thumbnails_btn"/>
+      <element id="fullscreen_btn"/>
+      <element id="help_btn"/>
+      <element id="print_btn"/>
+      <element id="email_btn"/>
+      <element id="share_btn"/>
+      <element id="pagemark_btn"/>
+      <element id="notes_list_btn"/>
+      <element id="page_control"/>
+      <element id="autoplay_btn"/>
+      <element id="drive_btn"/>
+    </icons>
+    <panels/>
+  </editable>
+</root>

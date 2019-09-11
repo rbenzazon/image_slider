@@ -1,0 +1,50 @@
+<!-- This comment will put IE 6, 7, 8, and 9 in quirks mode -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>canvas viewer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<style type="text/css">
+	body{
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		/*position: absolute;*/
+		right: 0;
+		top: 0;
+	}
+	.simpleViewer{
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.absolute{
+		position: absolute;
+	}
+	.notInteractive{
+		pointer-events: none;
+		moz-pointer-events: none;
+		transform-origin: left top
+	}
+	#simpleViewer{
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+	}
+	</style>
+  </head>
+  <body >
+    <script type="text/javascript" src="canvasviewer.js"></script>
+  </body>
+</html>

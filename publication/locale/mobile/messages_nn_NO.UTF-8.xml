@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<message id="action_send"><![CDATA[Send]]></message>
+	<message id="details"><![CDATA[Detaljer]]></message>
+	<message id="details_information"><![CDATA[Informasjon]]></message>
+	<message id="incorrect_email"><![CDATA[Feil e-post]]></message>
+	<message id="label_message"><![CDATA[Melding]]></message>
+	<message id="label_page"><![CDATA[Side]]></message>
+	<message id="label_receiveremail"><![CDATA[Mottaker e-post]]></message>
+	<message id="label_youremail"><![CDATA[E-posten din]]></message>
+	<message id="label_yourname"><![CDATA[Navnet ditt]]></message>
+	<message id="mail_attachment"><![CDATA[Vedlegg:]]></message>
+	<message id="mail_send_error"><![CDATA[En feil har oppstått... Vennligst prøv igjen senere]]></message>
+	<message id="mail_send_success"><![CDATA[E-posten din er sendt]]></message>
+	<message id="media_drive"><![CDATA[Mappe]]></message>
+	<message id="media_image"><![CDATA[Bilde]]></message>
+	<message id="media_video"><![CDATA[Video]]></message>
+	<message id="menu_documentback"><![CDATA[Tilbake til dokumentet]]></message>
+	<message id="menu_facebook_share"><![CDATA[Del på Facebook]]></message>
+	<message id="menu_fullscreen"><![CDATA[Full skjerm]]></message>
+	<message id="menu_gallery"><![CDATA[Galleri]]></message>
+	<message id="menu_googleplus_share"><![CDATA[Del på Google+]]></message>
+	<message id="menu_linkedin_share"><![CDATA[Del på LinkedIn]]></message>
+	<message id="menu_mail"><![CDATA[Send via e-post]]></message>
+	<message id="menu_pinterest_share"><![CDATA[Del på Pinterest]]></message>
+	<message id="menu_search"><![CDATA[Søk]]></message>
+	<message id="menu_sharethis"><![CDATA[Del]]></message>
+	<message id="menu_summary"><![CDATA[Innhold]]></message>
+	<message id="menu_thumbnail"><![CDATA[Alle sider]]></message>
+	<message id="menu_tumblr_share"><![CDATA[Del på Tumblr]]></message>
+	<message id="menu_twitter_share"><![CDATA[Del på Twitter]]></message>
+	<message id="multilinks_title"><![CDATA[Velg en handling]]></message>
+	<message id="pagination_error"><![CDATA[Sidetallet du valgte eksisterer ikke. Skriv inn et nytt nummer]]></message>
+	<message id="pagination_legend"><![CDATA[Skriv inn det forespurte sidetallet]]></message>
+	<message id="pagination_separator"><![CDATA[tomt for]]></message>
+	<message id="search_ended"><![CDATA[Søk ferdig]]></message>
+	<message id="search_no_result"><![CDATA[Ingen resultat]]></message>
+	<message id="search_result"><![CDATA[resultater]]></message>
+	<message id="searchPlaceholder"><![CDATA[Søk]]></message>
+</messages>

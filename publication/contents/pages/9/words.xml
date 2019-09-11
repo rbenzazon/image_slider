@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page num="9" method="xml-words">
+  <block id="1">
+    <word soundex="E235"><![CDATA[extension]]></word>
+    <word soundex="F600"><![CDATA[foyer]]></word>
+    <word soundex="C550"><![CDATA[cheminée]]></word>
+    <word soundex="T400"><![CDATA[tôle]]></word>
+    <word soundex="N600"><![CDATA[noire]]></word>
+    <word soundex="R420"><![CDATA[réalisé]]></word>
+    <word soundex="J650"><![CDATA[jerôme]]></word>
+    <word soundex="G620"><![CDATA[gros]]></word>
+  </block>
+  <block id="2">
+    <word soundex="T120"><![CDATA[tapis]]></word>
+    <word soundex="N500"><![CDATA[nani]]></word>
+    <word soundex="M625"><![CDATA[marquina]]></word>
+    <word soundex="C510"><![CDATA[canapé]]></word>
+    <word soundex="P410"><![CDATA[philippe]]></word>
+    <word soundex="S362"><![CDATA[starck]]></word>
+    <word soundex="C220"><![CDATA[chaises]]></word>
+    <word soundex="H520"><![CDATA[hans]]></word>
+    <word soundex="W256"><![CDATA[wegner]]></word>
+    <word soundex="P432"><![CDATA[plaids]]></word>
+  </block>
+  <block id="3">
+    <word soundex="C252"><![CDATA[coussins]]></word>
+    <word soundex="A615"><![CDATA[arpin]]></word>
+    <word soundex="L253"><![CDATA[legend]]></word>
+    <word soundex="H300"><![CDATA[haut]]></word>
+  </block>
+  <block id="4">
+    <word soundex="C615"><![CDATA[charpente]]></word>
+    <word soundex="A120"><![CDATA[avec]]></word>
+    <word soundex="F320"><![CDATA[faitage]]></word>
+    <word soundex="A253"><![CDATA[ascendant]]></word>
+    <word soundex="V620"><![CDATA[vers]]></word>
+    <word soundex="G426"><![CDATA[glacier]]></word>
+  </block>
+</page>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page num="19" method="cooked">
+  <lk src="1">
+    <content y="121" width="116" height="8" x="48">
+      <rect/>
+    </content>
+    <useract param="http://www.turin-immobilier.com" type="url" event="click" target="_blank"/>
+  </lk>
+  <lk src="1">
+    <content y="121" width="98" height="11" x="250">
+      <rect/>
+    </content>
+    <useract param="mailto:Contact-jde@orange.fr" type="mailto" event="click" target="_blank"/>
+  </lk>
+  <lk src="1">
+    <content y="185" width="85" height="9" x="276">
+      <rect/>
+    </content>
+    <useract param="mailto:Ritarita@blanchet.it" type="mailto" event="click" target="_blank"/>
+  </lk>
+  <lk src="1">
+    <content y="196" width="118" height="11" x="421">
+      <rect/>
+    </content>
+    <useract param="mailto:clement.goudet@hotmail.fr" type="mailto" event="click" target="_blank"/>
+  </lk>
+  <lk src="1">
+    <content y="218" width="140" height="11" x="410">
+      <rect/>
+    </content>
+    <useract param="http://www.menuiserie-alpes-bois.com" type="url" event="click" target="_blank"/>
+  </lk>
+  <lk src="1">
+    <content y="220" width="117" height="11" x="48">
+      <rect/>
+    </content>
+    <useract param="mailto:payan.ferrero@wanadoo.fr" type="mailto" event="click" target="_blank"/>
+  </lk>
+  <lk src="1">
+    <content y="293" width="80" height="8" x="440">
+      <rect/>
+    </content>
+    <useract param="http://www.mobilinino.it" type="url" event="click" target="_blank"/>
+  </lk>
+  <lk src="1">
+    <content y="308" width="137" height="8" x="37">
+      <rect/>
+    </content>
+    <useract param="http://www.construction-chalet-bois.fr" type="url" event="click" target="_blank"/>
+  </lk>
+  <lk src="1">
+    <content y="372" width="97" height="11" x="250">
+      <rect/>
+    </content>
+    <useract param="http://www.bodinphoto.com" type="url" event="click" target="_blank"/>
+  </lk>
+  <lk src="1">
+    <content y="372" width="116" height="11" x="48">
+      <rect/>
+    </content>
+    <useract param="mailto:Pierrick.courtial@laposte.fr" type="mailto" event="click" target="_blank"/>
+  </lk>
+</page>

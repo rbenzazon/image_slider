@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page num="2" method="xml-words">
+  <block id="1">
+    <word soundex="C516"><![CDATA[chambre]]></word>
+    <word soundex="P652"><![CDATA[principale]]></word>
+    <word soundex="S215"><![CDATA[suspendue]]></word>
+    <word soundex="E212"><![CDATA[exposée]]></word>
+    <word soundex="E230"><![CDATA[est]]></word>
+    <word soundex="S614"><![CDATA[surplombant]]></word>
+    <word soundex="V400"><![CDATA[vallée]]></word>
+    <word soundex="G250"><![CDATA[guisane]]></word>
+  </block>
+  <block id="2">
+    <word soundex="O653"><![CDATA[orientation]]></word>
+    <word soundex="G426"><![CDATA[glacier]]></word>
+    <word soundex="P600"><![CDATA[pour]]></word>
+    <word soundex="P220"><![CDATA[pièces]]></word>
+    <word soundex="V160"><![CDATA[vivre]]></word>
+    <word soundex="T620"><![CDATA[terrasse]]></word>
+    <word soundex="C163"><![CDATA[couverte]]></word>
+  </block>
+</page>

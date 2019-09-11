@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<message id="action_send"><![CDATA[Enviar]]></message>
+	<message id="details"><![CDATA[Detalls]]></message>
+	<message id="details_information"><![CDATA[Informació]]></message>
+	<message id="incorrect_email"><![CDATA[Email incorrecte]]></message>
+	<message id="label_message"><![CDATA[Missatge]]></message>
+	<message id="label_page"><![CDATA[Pàgina]]></message>
+	<message id="label_receiveremail"><![CDATA[Adreça de correu del destinatari]]></message>
+	<message id="label_youremail"><![CDATA[La teva adreça de correu]]></message>
+	<message id="label_yourname"><![CDATA[El teu nom]]></message>
+	<message id="mail_attachment"><![CDATA[Fitxers adjunts:]]></message>
+	<message id="mail_send_error"><![CDATA[S'ha produït un error. Torna a provar-ho més tard.]]></message>
+	<message id="mail_send_success"><![CDATA[El teu correu s'ha enviat]]></message>
+	<message id="media_drive"><![CDATA[Carpeta]]></message>
+	<message id="media_image"><![CDATA[Imatge]]></message>
+	<message id="media_video"><![CDATA[Vídeo]]></message>
+	<message id="menu_documentback"><![CDATA[Tornar al document]]></message>
+	<message id="menu_facebook_share"><![CDATA[Compartir a Facebook]]></message>
+	<message id="menu_fullscreen"><![CDATA[Pantalla completa]]></message>
+	<message id="menu_gallery"><![CDATA[Galeria]]></message>
+	<message id="menu_googleplus_share"><![CDATA[Compartir a Google+]]></message>
+	<message id="menu_linkedin_share"><![CDATA[Compartir a LinkedIn]]></message>
+	<message id="menu_mail"><![CDATA[Enviar per email]]></message>
+	<message id="menu_pinterest_share"><![CDATA[Compartir a Pinterest]]></message>
+	<message id="menu_search"><![CDATA[Cercar]]></message>
+	<message id="menu_sharethis"><![CDATA[Compartir]]></message>
+	<message id="menu_summary"><![CDATA[Índex]]></message>
+	<message id="menu_thumbnail"><![CDATA[Totes les pàgines]]></message>
+	<message id="menu_tumblr_share"><![CDATA[Compartir a Tumblr]]></message>
+	<message id="menu_twitter_share"><![CDATA[Compartir a Twitter]]></message>
+	<message id="pagination_error"><![CDATA[El nombre de pàgina que has introduït no existeix. Si us plau, escriu un nou nombre.]]></message>
+	<message id="pagination_legend"><![CDATA[Introdueix el nombre de la pàgina]]></message>
+	<message id="pagination_separator"><![CDATA[de]]></message>
+	<message id="search_ended"><![CDATA[Cerca completada]]></message>
+	<message id="search_no_result"><![CDATA[No s'han trobat resultats]]></message>
+	<message id="search_result"><![CDATA[resultats]]></message>
+	<message id="searchPlaceholder"><![CDATA[Cercador]]></message>
+</messages>

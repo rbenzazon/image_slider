@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page num="16" method="xml-words">
+  <block id="1">
+    <word soundex="M342"><![CDATA[modules]]></word>
+    <word soundex="C620"><![CDATA[carrés]]></word>
+    <word soundex="M000"><![CDATA[mah]]></word>
+    <word soundex="J520"><![CDATA[jong]]></word>
+    <word soundex="R216"><![CDATA[recouvert]]></word>
+    <word soundex="T220"><![CDATA[tissus]]></word>
+    <word soundex="M250"><![CDATA[missoni]]></word>
+    <word soundex="D164"><![CDATA[dépareillés]]></word>
+    <word soundex="R216"><![CDATA[recouvrent]]></word>
+    <word soundex="S450"><![CDATA[salon]]></word>
+    <word soundex="E515"><![CDATA[enfants]]></word>
+  </block>
+  <block id="2">
+    <word soundex="B530"><![CDATA[bande]]></word>
+    <word soundex="V234"><![CDATA[végétale]]></word>
+    <word soundex="L250"><![CDATA[lychen]]></word>
+  </block>
+</page>
