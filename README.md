@@ -14,8 +14,17 @@ npm install
 ```
 npm run build
 ```
+## test the build locally :  
+you can install (globally) http-server for instance 
+```
+npm install http-server -g
+```
+and use this command
+```
+http-server dist -o
+```
 
 ## start dev mode
 ```
-npm run start
+npm start
 ```
